@@ -44,7 +44,7 @@ class Chat extends Component {
       const answer = answersData[i];
       for (let j = 0; j < answer.tags.length; j += 1) {
         if (currentMessage.includes(answer.tags[j])) {
-          preDefinedAnswer = answer;
+          allMessgaes = allMessgaes.concat(answer);
           break;
         }
       }
